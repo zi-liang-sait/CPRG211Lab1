@@ -55,7 +55,7 @@ namespace CPRG211Lab1
             float numPeople = 0;
             for (int i = 0; i < ListOfPeople.Count; i++)
             {
-                sumAges += ListOfPeople[i].age;
+                sumAges += ListOfPeople[i].Age;
                 numPeople++;
             }
             float averageAge = sumAges / numPeople;
@@ -68,24 +68,24 @@ namespace CPRG211Lab1
             Person oldestPerson = null; //Initialize to null - from ChatGPT
             for (int i = 0; i < ListOfPeople.Count; i++)
             {
-                if (ListOfPeople[i].age < youngestAge)
+                if (ListOfPeople[i].Age < youngestAge)
                 {
-                    youngestAge = ListOfPeople[i].age;
+                    youngestAge = ListOfPeople[i].Age;
                     youngestPerson = ListOfPeople[i];
                 }
-                if (ListOfPeople[i].age > oldestAge)
+                if (ListOfPeople[i].Age > oldestAge)
                 {
-                    oldestAge = ListOfPeople[i].age;
+                    oldestAge = ListOfPeople[i].Age;
                     oldestPerson = ListOfPeople[i];
                 }
             }
-            Console.WriteLine($"The youngest person is: {youngestPerson.firstName}");
-            Console.WriteLine($"The youngest person is: {oldestPerson.firstName}");
+            Console.WriteLine($"The youngest person is: {youngestPerson.FirstName}");
+            Console.WriteLine($"The youngest person is: {oldestPerson.FirstName}");
 
             //Display people whose first names start with M
             for (int i = 0; i < ListOfPeople.Count; i++)
             {
-                if (ListOfPeople[i].firstName.StartsWith("M"))
+                if (ListOfPeople[i].FirstName.StartsWith("M"))
                 {
                     Console.WriteLine(ListOfPeople[i]);
                 }
@@ -94,7 +94,7 @@ namespace CPRG211Lab1
             //Display people who likes Blue
             for (int i = 0; i < ListOfPeople.Count; i++)
             {
-                if (ListOfPeople[i].favoriteColour == "Blue")
+                if (ListOfPeople[i].FavoriteColour == "Blue")
                 {
                     Console.WriteLine(ListOfPeople[i]);
                 }

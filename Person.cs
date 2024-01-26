@@ -12,46 +12,46 @@ namespace CPRG211Lab1
 {
     public class Person
     {
-        public int personId;
-        public string firstName;
-        public string lastName;
-        public string favoriteColour;
-        public int age;
-        public bool isWorking;
+        public int PersonId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string FavoriteColour { get; set; }
+        public int Age { get; set; }
+        public bool IsWorking { get; set; }
 
         public Person(int personId_in, string firstName_in, string lastName_in, string favoriteColour_in, int age_in, bool isWorking_in)
         {
-            this.personId = personId_in;
-            this.firstName = firstName_in;
-            this.lastName = lastName_in;
-            this.favoriteColour = favoriteColour_in;
-            this.age = age_in;
-            this.isWorking = isWorking_in;
+            this.PersonId = personId_in;
+            this.FirstName = firstName_in;
+            this.LastName = lastName_in;
+            this.FavoriteColour = favoriteColour_in;
+            this.Age = age_in;
+            this.IsWorking = isWorking_in;
         }
 
         public string DisplayPersonInfo()
         {
-            return $"{this.personId}: {this.firstName} {this.lastName}'s favorite color is {this.favoriteColour}";
+            return $"{this.PersonId}: {this.FirstName} {this.LastName}'s favorite color is {this.FavoriteColour}";
         }
 
         public void ChangeFavoriteColour(string colour_in)
         {
-            this.favoriteColour = colour_in;
+            this.FavoriteColour = colour_in;
         }
 
         public string GetAgeInTenYears()
         {
-            return $"{this.firstName} {this.lastName}'s Age in 10 years is: {this.age + 10}";
+            return $"{this.FirstName} {this.LastName}'s Age in 10 years is: {this.Age + 10}";
         }        
 
         public override string ToString()
         {
-            return $"PersonId: {this.personId}\n" +
-                $"FirstName: {this.firstName}\n" +
-                $"LastName: {this.lastName}\n" +
-                $"FavoriteColour: {this.favoriteColour}\n" +
-                $"Age: {this.age}\n" +
-                $"IsWorking: {this.isWorking}\n";
+            return $"PersonId: {this.PersonId}\n" +
+                $"FirstName: {this.FirstName}\n" +
+                $"LastName: {this.LastName}\n" +
+                $"FavoriteColour: {this.FavoriteColour}\n" +
+                $"Age: {this.Age}\n" +
+                $"IsWorking: {this.IsWorking}\n";
         }
     }
 }

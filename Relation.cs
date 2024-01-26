@@ -21,7 +21,7 @@ namespace CPRG211Lab1
 
         public string ShowRelationship(Person person1, Person person2)
         {
-            return $"Relationship between {person1.firstName} and {person2.firstName} is: {this.RelationshipType}hood";
+            return $"Relationship between {person1.FirstName} and {person2.FirstName} is: {this.RelationshipType}hood";
         }
     }
 }
